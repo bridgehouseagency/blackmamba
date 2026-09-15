@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamba FC — Shop</title>
+<meta name="description" content="Official Mamba FC merchandise — jerseys, training kit, and fan gear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="brand-stripe"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="23" fill="#0b0c0d" stroke="#128a3e" stroke-width="2"/>
+        <path d="M13 33c4-2 4-6 0-8s-4-6 0-8 9-2 11-8" stroke="#c8102e" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="26" cy="9" r="2" fill="#1fbf5c"/>
+      </svg>
+      MAMBA<span class="fc">&nbsp;FC</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="roster.html" data-page="roster.html">Roster</a>
+      <a href="news.html" data-page="news.html">Latest News</a>
+      <a href="shop.html" data-page="shop.html">Shop</a>
+      <a href="about.html" data-page="about.html">About</a>
+      <a href="shop.html#products" class="nav-cart" aria-label="Cart">
+        🛒 <span class="cart-badge">0</span>
+      </a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header">
+  <div class="container">
+    <h1>Club Shop</h1>
+    <p>Wear the colours. Every purchase supports youth development at Mamba FC.</p>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="grid grid-3">
+
+      <div class="card product-card">
+        <div class="product-image">
+          <span class="product-tag">New</span>
+          <div class="kit-stripe"></div>
+        </div>
+        <div class="product-body">
+          <h3>2026/27 Home Jersey</h3>
+          <span class="product-price">$79.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="2026/27 Home Jersey">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-image">
+          <div class="kit-stripe" style="background: linear-gradient(180deg, var(--red) 0 33%, var(--black) 33% 66%, var(--green) 66% 100%);"></div>
+        </div>
+        <div class="product-body">
+          <h3>2026/27 Away Jersey</h3>
+          <span class="product-price">$79.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="2026/27 Away Jersey">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-image">
+          <div class="kit-stripe" style="background: var(--black-soft);"></div>
+        </div>
+        <div class="product-body">
+          <h3>Training Kit Set</h3>
+          <span class="product-price">$64.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="Training Kit Set">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-image">
+          <span class="product-tag">Fan Gear</span>
+          <div class="kit-stripe" style="width:85%; height:35%; background:linear-gradient(90deg, var(--black) 0 33%, var(--green) 33% 66%, var(--red) 66% 100%);"></div>
+        </div>
+        <div class="product-body">
+          <h3>Supporter Scarf</h3>
+          <span class="product-price">$24.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="Supporter Scarf">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-image">
+          <div class="kit-stripe" style="width:40%; height:40%; border-radius:50%; background: var(--black);"></div>
+        </div>
+        <div class="product-body">
+          <h3>Mamba FC Cap</h3>
+          <span class="product-price">$19.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="Mamba FC Cap">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-image">
+          <div class="kit-stripe" style="width:30%; height:60%; border-radius:14px; background: linear-gradient(180deg, var(--green) 0 50%, var(--black) 50% 100%);"></div>
+        </div>
+        <div class="product-body">
+          <h3>Water Bottle</h3>
+          <span class="product-price">$14.99 CAD</span>
+          <button class="btn btn-primary btn-block add-cart-btn" data-product="Water Bottle">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Mamba FC</h4>
+        <p>A local football club nurturing young talent and preparing them for the future, proudly managed by the New Brunswick African Association.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter/X">x</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roster.html">Roster</a></li>
+          <li><a href="news.html">Latest News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>info@mambafc.ca</li>
+          <li>(506) 555-0123</li>
+          <li>New Brunswick, Canada</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Managed By</h4>
+        <ul>
+          <li>New Brunswick African Association</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mamba FC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
