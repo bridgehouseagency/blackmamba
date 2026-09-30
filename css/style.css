@@ -451,6 +451,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 700;
+  color: var(--black-soft);
 }
 
 .fixture-info {
@@ -575,6 +576,7 @@ h1, h2, h3, h4 {
 .player-info h3 {
   font-size: 1.05rem;
   margin-bottom: 4px;
+  color: var(--black-soft);
 }
 
 .player-pos {
@@ -657,6 +659,7 @@ h1, h2, h3, h4 {
 .vm-card h3 {
   font-size: 1.3rem;
   margin-bottom: 14px;
+  color: var(--black-soft);
 }
 
 .vm-card p {
@@ -960,6 +963,7 @@ h1, h2, h3, h4 {
 .stage-card h3 {
   font-size: 1.3rem;
   margin-bottom: 4px;
+  color: var(--black-soft);
 }
 
 .stage-tag {
@@ -1006,6 +1010,7 @@ h1, h2, h3, h4 {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   font-weight: 600;
   font-size: 0.95rem;
+  color: var(--black-soft);
 }
 
 .program-item .dot {
@@ -1133,6 +1138,7 @@ h1, h2, h3, h4 {
 .form-field label {
   font-weight: 600;
   font-size: 0.85rem;
+  color: var(--black-soft);
 }
 
 .form-field input,
