@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mambas Academy — Registration</title>
+<meta name="description" content="Register for Mambas Academy. No young person's potential should be determined by what their family can afford.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="brand-stripe"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="23" fill="#0b0c0d" stroke="#128a3e" stroke-width="2"/>
+        <path d="M13 33c4-2 4-6 0-8s-4-6 0-8 9-2 11-8" stroke="#c8102e" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="26" cy="9" r="2" fill="#1fbf5c"/>
+      </svg>
+      <span class="logo-stack">MAMBAS<span class="fc">&nbsp;ACADEMY</span><span class="sub-brand">Youth Soccer &amp; Futsal</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="about.html" data-page="about.html">About Us</a>
+      <a href="programs.html" data-page="programs.html">Our Programs</a>
+      <a href="pathway.html" data-page="pathway.html">Player Pathway</a>
+      <a href="teams.html" data-page="teams.html">Teams</a>
+      <a href="coaches.html" data-page="coaches.html">Coaches</a>
+      <a href="schedule.html" data-page="schedule.html">Schedule</a>
+      <a href="registration.html" data-page="registration.html">Registration</a>
+      <a href="family.html" data-page="family.html">Mamba Family</a>
+      <a href="sponsors.html" data-page="sponsors.html">Sponsors &amp; Partners</a>
+      <a href="gallery.html" data-page="gallery.html">Gallery</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header">
+  <div class="container">
+    <h1>Join Mambas</h1>
+    <p>All backgrounds. All skill levels. One Mamba Family. Come train. Come compete. Come grow. Come belong.</p>
+  </div>
+</section>
+
+<!-- ===== ACCESS & OPPORTUNITY ===== -->
+<section class="section" style="padding-bottom:30px;">
+  <div class="container" style="text-align:center;">
+    <span class="section-eyebrow">Access &amp; Opportunity</span>
+    <h2 style="max-width:700px; margin:10px auto 20px;">No Young Person's Potential Should Be Determined By What Their Family Can Afford.</h2>
+    <p style="color:var(--grey); max-width:640px; margin:0 auto;">Mambas Academy works to reduce barriers that can prevent children and youth from participating in organized sports. Through community partnerships, sponsorships, and equipment support, our goal is to help families overcome barriers related to registration costs, soccer boots, shin guards, uniforms, transportation, and other participation needs. If cost is a concern, let us know when you register — it will never be a reason to turn a player away.</p>
+  </div>
+</section>
+
+<!-- ===== FORM ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-eyebrow">Get Started</span>
+        <h2 style="color:var(--white); margin-bottom:16px;">Register a Player</h2>
+        <p style="color:var(--grey-light); margin-bottom:24px;">Fill out the form and our team will follow up to confirm the right program group and next steps. This form is a placeholder — connect it to your registration system when you're ready to go live.</p>
+        <div class="contact-info-list">
+          <div class="contact-info-item"><span class="label">Ages</span>6–19, grouped by the Player Pathway</div>
+          <div class="contact-info-item"><span class="label">Location</span>Fredericton, New Brunswick</div>
+          <div class="contact-info-item"><span class="label">Financial Support</span>Available — ask us, no questions asked</div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-field">
+          <label for="reg-player-name">Player's Full Name</label>
+          <input type="text" id="reg-player-name" name="playerName" required>
+        </div>
+        <div class="form-field">
+          <label for="reg-dob">Date of Birth</label>
+          <input type="date" id="reg-dob" name="dob" required>
+        </div>
+        <div class="form-field">
+          <label for="reg-parent-name">Parent / Guardian Name</label>
+          <input type="text" id="reg-parent-name" name="parentName" required>
+        </div>
+        <div class="form-field">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="reg-phone">Phone</label>
+          <input type="tel" id="reg-phone" name="phone">
+        </div>
+        <div class="form-field">
+          <label for="reg-program">Interested Program</label>
+          <select id="reg-program" name="program">
+            <option>Foundation (Ages 6–9)</option>
+            <option>Development (Ages 10–12)</option>
+            <option>Performance (Ages 13–15)</option>
+            <option>Pathway (Ages 16–19)</option>
+            <option>Futsal</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="reg-notes">Notes (optional)</label>
+          <textarea id="reg-notes" name="notes" placeholder="Anything we should know — including if financial support would help."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Mambas Academy</h4>
+        <p>Play. Belong. Grow. Lead. A youth soccer &amp; futsal development academy for ages 6–19 in Fredericton, New Brunswick — proudly managed by the New Brunswick African Association.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter/X">x</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="pathway.html">Player Pathway</a></li>
+          <li><a href="teams.html">Teams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="coaches.html">Coaches</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="family.html">Mamba Family</a></li>
+          <li><a href="sponsors.html">Sponsors &amp; Partners</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>info@mambasacademy.ca</li>
+          <li>(506) 555-0123</li>
+          <li>Fredericton, New Brunswick</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Managed By</h4>
+        <ul>
+          <li>New Brunswick African Association</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mambas Academy. All rights reserved. &middot; Train Hard. Play Smart. Be Mamba.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

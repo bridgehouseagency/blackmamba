@@ -1,13 +1,12 @@
 // ===================================================
-// Mamba FC — Shared Script
+// Mambas Academy — Shared Script
 // ===================================================
 
 document.addEventListener('DOMContentLoaded', () => {
   highlightActiveNav();
   setupNavToggle();
-  setupRosterFilter();
-  setupReadMore();
-  setupCart();
+  setupTeamFilter();
+  setupContactForm();
 });
 
 // Highlight the current page's nav link
@@ -35,8 +34,8 @@ function setupNavToggle() {
   });
 }
 
-// Roster position filter
-function setupRosterFilter() {
+// Teams page position filter
+function setupTeamFilter() {
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.player-card');
   if (!buttons.length || !cards.length) return;
@@ -55,43 +54,16 @@ function setupRosterFilter() {
   });
 }
 
-// News "read more" toggle
-function setupReadMore() {
-  document.querySelectorAll('.read-more-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const more = btn.previousElementSibling;
-      const expanded = more.style.display === 'block';
-      more.style.display = expanded ? 'none' : 'block';
-      btn.textContent = expanded ? 'Read More →' : 'Show Less ←';
-    });
+// Contact / registration form (front-end only, no backend wired up yet)
+function setupContactForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Thanks! We’ll be in touch soon.');
+    form.reset();
   });
-}
-
-// Shop cart (localStorage-backed, front-end only)
-function setupCart() {
-  const cartBadge = document.querySelector('.cart-badge');
-  const addButtons = document.querySelectorAll('.add-cart-btn');
-  if (!cartBadge && !addButtons.length) return;
-
-  updateCartBadge();
-
-  addButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const count = getCartCount() + 1;
-      localStorage.setItem('mambaFcCartCount', String(count));
-      updateCartBadge();
-      showToast(`Added "${btn.dataset.product}" to cart`);
-    });
-  });
-}
-
-function getCartCount() {
-  return parseInt(localStorage.getItem('mambaFcCartCount') || '0', 10);
-}
-
-function updateCartBadge() {
-  const badge = document.querySelector('.cart-badge');
-  if (badge) badge.textContent = getCartCount();
 }
 
 // Toast notification
@@ -105,5 +77,5 @@ function showToast(message) {
   toast.textContent = message;
   toast.classList.add('show');
   clearTimeout(showToast._timer);
-  showToast._timer = setTimeout(() => toast.classList.remove('show'), 2200);
+  showToast._timer = setTimeout(() => toast.classList.remove('show'), 2600);
 }
