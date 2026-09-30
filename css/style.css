@@ -11,6 +11,8 @@
   --green-light: #1fbf5c;
   --red: #c8102e;
   --red-dark: #8c0c22;
+  --mustard: #9c6f0b;
+  --mustard-dark: #6f4e08;
   --white: #f7f7f5;
   --grey: #9a9a9a;
   --grey-light: #e4e4e2;
@@ -968,7 +970,7 @@ h1, h2, h3, h4 {
 
 .stage-tag {
   display: block;
-  color: var(--red);
+  color: var(--mustard-dark);
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
