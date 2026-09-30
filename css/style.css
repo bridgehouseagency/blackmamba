@@ -15,6 +15,7 @@
   --mustard-dark: #6f4e08;
   --white: #f7f7f5;
   --grey: #9a9a9a;
+  --grey-dark: #5c5c5c;
   --grey-light: #e4e4e2;
 
   --font-heading: 'Poppins', 'Segoe UI', sans-serif;
@@ -330,7 +331,7 @@ h1, h2, h3, h4 {
 }
 
 .section-head p {
-  color: var(--grey);
+  color: var(--grey-dark);
   max-width: 560px;
   margin: 12px auto 0;
 }
@@ -458,7 +459,7 @@ h1, h2, h3, h4 {
 
 .fixture-info {
   font-size: 0.85rem;
-  color: var(--grey);
+  color: var(--grey-dark);
 }
 
 /* ---------- Partner marquee ---------- */
@@ -583,7 +584,7 @@ h1, h2, h3, h4 {
 
 .player-pos {
   font-size: 0.8rem;
-  color: var(--grey);
+  color: var(--grey-dark);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -931,7 +932,7 @@ h1, h2, h3, h4 {
 .section-alt .trait-word { color: var(--green-light); }
 
 .trait-card p {
-  color: var(--grey);
+  color: var(--grey-dark);
   font-size: 0.9rem;
 }
 
@@ -979,7 +980,7 @@ h1, h2, h3, h4 {
 }
 
 .stage-card p {
-  color: var(--grey);
+  color: var(--grey-dark);
   font-size: 0.92rem;
 }
 
